@@ -1,0 +1,54 @@
+* { box-sizing: border-box; }
+main { display: block; }
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+h1 { float: right;
+    font-size: 3.5em; }
+nav { background-color: lightgray;
+text-align: center;
+    font-weight: bold;
+    font-size: 1.5em; }
+nav a { text-decoration: none; }
+nav a:link { color: rebeccapurple; }
+nav a:hover { color: chartreuse; }
+nav li { display: inline-block; }
+nav ul { list-style-type: none;
+        padding: 20px;
+        word-spacing: 1em; }
+#headphones{
+  display: flex;
+  padding: 5px;
+    position: static;
+    background-color: #00AAFF;
+    width: 40%;
+}
+footer { background-color: lightgray;
+        text-align: center;
+        font-weight: bold;
+        color: rebeccapurple;
+        padding: 10px; }
+
+.button { font-size: 20px;
+    padding: 5px;
+    width: 120px;
+    margin: 15px; }
+
+@media only screen and (max-width: 768px) { 
+nav { margin: 0; }	
+nav a { display: block; 
+        padding: .2em;
+        width: auto;
+        border-bottom: 1px solid dimgray; }
+nav li { display: block; }	
+main { padding-top: 1px; }	 
+h2 { padding: .5em 0 0 .5em;
+        margin-right: .5em; }
+.details { padding-left: 0;
+            padding-right: 0; }
+.floatleft { padding-left: .5em;
+                padding-right: .5em; }
+}
